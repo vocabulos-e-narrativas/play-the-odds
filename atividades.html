@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Play the Odds</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description"
+        content="Ferramenta de comunicação baseada no jogo para ajudar pais e filhos a lidar com o risco de cancro hereditário.">
+    <meta name="keywords"
+        content="PTO, PLAY-THE-ODDS, PLAY THE ODDS, PLAYTHEODDS, play-the-odds, play the odds, playtheodds, jogo, pais e filhos, cancro, cancro hereditario, cancro hereditário">
+    <meta name="language" content="pt">
+    <!-- Importando Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/styles/style.css">
+    <link rel="icon" href="./static/images/layout/logo.svg" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="d-flex align-items-center ms-1">
+                        <img src="./static/images/layout/logo.svg" alt="Play the Odds Logo" class="logo-pto">
+                    </div>
+                </a>
+                <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-white" href="index.html">Sobre</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-white" href="equipa.html">Equipa</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-white" href="cocriacao.html">Rede de Cocriação</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" href="atividades.html">Atividades</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link text-white" href="resultados.html">Resultados</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="row">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex align-items-center"
+                        style="background-image: url('./static/images/carousel/carousel1.png'); background-size: cover; height: 50vh;">
+                        <div class="col-md-7"></div>
+                        <div class="col-md-4 text-center text-white px-5">
+                            <h3>PLAY-THE-ODDS</h3>
+                            <h4>Desenvolvimento de uma ferramenta de comunicação baseada no jogo para ajudar pais e
+                                filhos a
+                                lidar com o risco de cancro hereditário</h4>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex align-items-center"
+                        style="background-image: url('./static/images/carousel/carousel2.png'); background-size: cover; height: 50vh;">
+                        <div class="col-md-7"></div>
+                        <div class="col-md-4 text-center text-white px-5">
+                            <h3>PLAY-THE-ODDS</h3>
+                            <h4>Desenvolvimento de uma ferramenta de comunicação baseada no jogo para ajudar pais e
+                                filhos a
+                                lidar com o risco de cancro hereditário</h4>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex align-items-center"
+                        style="background-image: url('./static/images/carousel/carousel3.png'); background-size: cover; height: 50vh;">
+                        <div class="col-md-7"></div>
+                        <div class="col-md-4 text-center text-white px-5">
+                            <h3>PLAY-THE-ODDS</h3>
+                            <h4>Desenvolvimento de uma ferramenta de comunicação baseada no jogo para ajudar pais e
+                                filhos a
+                                lidar com o risco de cancro hereditário</h4>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+    <div class="row middle-line">
+        <div class="col-md-1"></div>
+        <div class="col-md-1 text-center text-white py-3 px-5">
+            <h3>Atividades</h3>
+        </div>
+        <div class="col-md-10"></div>
+    </div>
+    <div class="bg-blue p-5">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col">
+                <div>
+                    <h4 class="text-green">Oficinas de Cocriação</h4>
+                    <p class="text-white my-2">
+                        As oficinas de cocriação consistiram num processo de
+                        desenvolvimento colaborativo de uma solução capaz de facilitar a adaptação
+                        psicológica ao risco de cancro hereditário.
+                    </p>
+                    <p class="text-white">
+                        Ao longo de quatro oficinas, os participantes foram distribuídos por quatro grupos,
+                        cada um dedicado a uma dimensão específica de acordo com os objetivos do projeto:
+                        a) auto-gestão emocional; b) díade parental; c) comunicação paciente-profissional;
+                        d) comunicação pais-filhos.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row text-center workshops">
+            <div class="col-md-2"></div>
+            <div class="col mt-5">
+                <div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col">
+                            <div id="modal1" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Oficina 1</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="carouselExampleIndicators1" class="carousel slide"
+                                                data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselExampleIndicators1" data-slide-to="0"
+                                                        class="active">
+                                                    </li>
+                                                    <li data-target="#carouselExampleIndicators1" data-slide-to="1">
+                                                    </li>
+                                                    <li data-target="#carouselExampleIndicators1" data-slide-to="2">
+                                                    </li>
+                                                    <li data-target="#carouselExampleIndicators1" data-slide-to="3">
+                                                    </li>
+                                                    <li data-target="#carouselExampleIndicators1" data-slide-to="4">
+                                                    </li>
+                                                    <li data-target="#carouselExampleIndicators1" data-slide-to="5">
+                                                    </li>
+                                                </ol>
+                                                <div class="row">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop1/oficina_1_1.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop1/oficina_1_2.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop1/oficina_1_3.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop1/oficina_1_4.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop1/oficina_1_5.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop1/oficina_1_6.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#carouselExampleIndicators1"
+                                                        role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="sr-only">Anterior</span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#carouselExampleIndicators1"
+                                                        role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="sr-only">Próximo</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Identificação e avaliação das necessidades.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col">
+                            <p class="text-white">Oficina 1</p>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="text-green workshop-btn" data-toggle="modal"
+                                data-target="#modal1">ver galeria</button>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col">
+                            <img src="./static/images/workshops/workshop1/oficina_1.png" alt="oficina_1" />
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row mb-5 mb-md-0 mt-3">
+                        <div class="col-md-2"></div>
+                        <div class="col">
+                            <p class="text-white mx-2 mx-md-1">Identificação e avaliação das necessidades.</p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-5">
+                <div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col">
+                            <div id="modal2" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Oficina 2</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="carouselExampleIndicators2" class="carousel slide"
+                                                data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselExampleIndicators2" data-slide-to="0"
+                                                        class="active">
+                                                    </li>
+                                                    <li data-target="#carouselExampleIndicators2" data-slide-to="1">
+                                                    </li>
+                                                    <li data-target="#carouselExampleIndicators2" data-slide-to="2">
+                                                    </li>
+                                                    <li data-target="#carouselExampleIndicators2" data-slide-to="3">
+                                                    </li>
+                                                    <li data-target="#carouselExampleIndicators2" data-slide-to="4">
+                                                    </li>
+                                                </ol>
+                                                <div class="row">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop2/oficina_2_1.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop2/oficina_2_2.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop2/oficina_2_3.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop2/oficina_2_4.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop2/oficina_2_5.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#carouselExampleIndicators2"
+                                                        role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="sr-only">Anterior</span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#carouselExampleIndicators2"
+                                                        role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="sr-only">Próximo</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Desenvolvimento coletivo de ideias.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col">
+                            <p class="text-white">Oficina 2</p>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="text-green workshop-btn" data-toggle="modal"
+                                data-target="#modal2">ver galeria</button>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col">
+                            <img src="./static/images/workshops/workshop2/oficina_2.png" alt="oficina_2" />
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row mb-5 mb-md-0 mt-3">
+                        <div class="col-md-2"></div>
+                        <div class="col">
+                            <p class="text-white mx-2 mx-md-1">Desenvolvimento coletivo de ideias.</p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row text-center workshops">
+            <div class="col-md-2"></div>
+            <div class="col mt-5">
+                <div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col">
+                            <div id="modal3" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Oficina 3</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="carouselExampleIndicators3" class="carousel slide"
+                                                data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselExampleIndicators3" data-slide-to="0"
+                                                        class="active">
+                                                    </li>
+                                                    <li data-target="#carouselExampleIndicators3" data-slide-to="1">
+                                                    </li>
+                                                </ol>
+                                                <div class="row">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop3/oficina_3_1.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop3/oficina_3_2.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#carouselExampleIndicators3"
+                                                        role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="sr-only">Anterior</span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#carouselExampleIndicators3"
+                                                        role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="sr-only">Próximo</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Validação da solução entre todos os participantes.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col">
+                            <p class="text-white">Oficina 3</p>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="text-green workshop-btn" data-toggle="modal"
+                                data-target="#modal3">ver galeria</button>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col">
+                            <img src="./static/images/workshops/workshop3/oficina_3.png" alt="oficina_3" />
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row mb-5 mb-md-0 mt-3">
+                        <div class="col-md-2"></div>
+                        <div class="col">
+                            <p class="text-white mx-2 mx-md-1">Validação da solução entre todos os participantes.</p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-5">
+                <div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col">
+                            <div id="modal4" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Oficina 4</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="carouselExampleIndicators4" class="carousel slide"
+                                                data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselExampleIndicators4" data-slide-to="0"
+                                                        class="active">
+                                                    </li>
+                                                    <li data-target="#carouselExampleIndicators4" data-slide-to="1">
+                                                    </li>
+                                                    <li data-target="#carouselExampleIndicators4" data-slide-to="2">
+                                                    </li>
+                                                </ol>
+                                                <div class="row">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop4/oficina_4_1.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop4/oficina_4_2.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="d-flex align-items-center"
+                                                                style="background-image: url('./static/images/workshops/workshop4/oficina_4_3.png'); background-size: cover; height: 30vh;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#carouselExampleIndicators4"
+                                                        role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="sr-only">Anterior</span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#carouselExampleIndicators4"
+                                                        role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="sr-only">Próximo</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Integração das soluções de todos os grupos, convergendo para uma única
+                                                solução.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col">
+                            <p class="text-white">Oficina 4</p>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="text-green workshop-btn" data-toggle="modal"
+                                data-target="#modal4">ver galeria</button>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col">
+                            <img src="./static/images/workshops/workshop4/oficina_4.png" alt="oficina_4" />
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row mb-5 mb-md-0 mt-3">
+                        <div class="col-md-2"></div>
+                        <div class="col">
+                            <p class="text-white mx-2 mx-md-1">Integração das soluções de todos os grupos, convergendo
+                                para uma única solução.</p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="text-center text-black">
+            <div class="row">
+                <img src="./static/images/layout/footer-top.svg" alt="footer-detail" />
+            </div>
+            <div class="row justify-content-between parceiros w-100 mx-auto">
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+                    <a href="https://sigarra.up.pt/fpceup/pt/web_page.inicial" target="_blank">
+                        <img src="./static/images/parceiros/up.png" alt="Parceiros" />
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="https://cpup.fpce.up.pt/rcpw/" target="_blank">
+                        <img src="./static/images/parceiros/psi.png" alt="Parceiros" />
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="https://epop.ipoporto.pt/" target="_blank">
+                        <img src="./static/images/parceiros/ipo.png" alt="Parceiros" />
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="https://www.citcem.org/" target="_blank">
+                        <img src="./static/images/parceiros/citcem.png" alt="Parceiros" />
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="https://www.fct.pt/" target="_blank">
+                        <img src="./static/images/parceiros/fct.png" alt="Parceiros" />
+                    </a>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="bg-footer-bot text-white">
+                Projeto exploratório financiado por fundos nacionais através da FCT - Fundação para a Ciência e
+                Tecnologia, I. P. (EXPL/PSI-GER/1270/2021)
+            </div>
+        </div>
+    </footer>
+    <!-- Importando o jQuery e o Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
